@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mydashApp', [])
+angular.module('mydashApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
