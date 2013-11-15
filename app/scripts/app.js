@@ -12,6 +12,10 @@ angular.module('mydashApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/d', {
+        templateUrl: 'views/dynamic.html',
+        controller: 'DynamicCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

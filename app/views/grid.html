@@ -1,3 +1,6 @@
-<div>
-  
+<div ng-repeat="row in col.rows" class="row-fluid">
+  <div ng-repeat="col in row" class="span{{col.span}} offset{{col.offset}}">
+    <chart ng-if="col.viewType=='chart'"></chart>
+    <butterbar ng-if="col.viewType=='butterbar'"></butterbar>
+  </div>
 </div>
